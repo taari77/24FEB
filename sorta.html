@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    let data=[40,30,12,25]
+    let data1=[]
+   
+    
+    for(i=0;i<data.length;i++){
+        for(j=i+1;j<data.length;j++){
+            if(data[i]>data[j]){
+                let temp=data[i];
+                data[i]=data[j];
+                data[j]=temp;
+            }
+        }
+        
+    }
+    document.write("The sorted array items are " + data)
+    </script>
+    
+</body>
+</html>
